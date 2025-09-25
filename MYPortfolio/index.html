@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="logo" id="logo">
+            <a href="#home" class="nav-branding">Ravi Kumar</a>
+            
+            <div class="navbar-right">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-socials">
+                    <a href="https://github.com/Ravitomar333" target="_blank" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ravi-kumar-ba875a2a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="section-container home-container">
+                <div class="home-text">
+                    <h1>Hi, I'm Ravi Tomar</h1>
+                    <h3>Creative Web Developer</h3>
+                    <p>A showcase of my skills and projects in building modern, responsive web applications.</p>
+                    <a href="assets/Raviresume.pdf" class="btn-resume" download>Download Resume</a>
+                </div>
+                <div class="home-image">
+                    <img src="assets/myimage.jpg" alt="Profile picture of Ravi Kumar">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2>About Me</h2>
+                <p>I’m Ravi Kumar, a passionate Java programmer and web developer with a strong 
+                    foundation in building interactive and user-friendly web applications. 
+                    Skilled in HTML, CSS, JavaScript, Node.js, Express, SQL, and MongoDB, 
+                    I enjoy solving problems, optimizing code, and creating efficient solutions.<br>
+                    I have experience working on projects ranging from responsive websites to backend-driven applications,
+                    and I’m always eager to learn new technologies to expand my skill set.<br>
+                    My goal is to combine creativity with technical expertise to deliver impactful digital experiences.<br>
+                I have hands-on experience in developing full-stack projects, solving coding challenges, and continuously exploring new tools to enhance my skills. My focus is on writing efficient code, building optimized systems, and delivering impactful digital solutions.
+               <br>
+                When I’m not coding, I love exploring new technologies, 
+                improving my problem-solving skills, and working on projects that challenge my creativity.
+</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo"><p>HTML</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo"><p>CSS</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo"><p>JavaScript</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo"><p>React</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo"><p>Node.js</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js Logo"><p>Express.js</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo"><p>MongoDB</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Logo"><p>SQL</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo"><p>Git</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo"><p>GitHub</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo"><p>Java</p></div>
+                    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo"><p>Python</p></div>
+                </div>
+            </div>
+        </section>
+<!--
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Currency Convertor</h3>
+                        <p>A simple and efficient currency converter web application that allows users
+                         to convert between multiple global currencies using real-time exchange rates.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>Description of the second project. Built with cutting-edge technology.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Three</h3>
+                        <p>Description of the third project. Solved a complex business problem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       --> <section id="projects" class="section">
+    <div class="section-container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="assets/currencylogo.png" alt="Currency Converter" class="project-image">
+                <h3>Currency Converter</h3>
+                <p>A simple and efficient currency converter web application that allows users
+                   to convert between multiple global currencies using real-time exchange rates.</p>
+                <div class="tech-logos">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/weatherapp.png" alt="Project Two" class="project-image">
+                <h3>Weather App</h3>
+                <p>A weather application that provides real-time temperature, humidity, and forecasts using an external weather API</p>
+                <div class="tech-logos">
+                   <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">-->
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/chatbotlogo.png" alt="Project Three" class="project-image">
+                <h3>ChatAI </h3>
+                <p> It is a ChatAI, which is an AI language model that generates conversational, human-like text in response to various prompts.
+
+                </p>
+                <div class="tech-logos">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2>My Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-logo">
+                            <img src="assets/aktulogo.jpeg" alt="University Logo">
+                        </div>
+                        <div class="education-details">
+                            <h3>Bachelor of Technology</h3>
+                            <h4>A.K.T.U </h4>
+                            <h5>Ajay Kumar Garg Engineering College Ghaziabad </h5>
+                            <p class="duration">2022 - 2026</p>
+                            <p>Specialization in Computer Science & Engineering. </p>
+                            <h5>CGPA: 7.5/10</h5>
+                        </div>
+                    </div>
+    
+                    <div class="education-card">
+                        <div class="education-logo">
+                            <img src="assets/diplomalogo.jpg" alt="College Logo">
+                        </div>
+                        <div class="education-details">
+                            <h3>Diploma in Mechanical Engineering</h3>
+                            <h4>S.G.S.J Polytechnic College Khurja</h4>
+                            <p class="duration">2019 - 2022</p>
+                            <p>Focused on develop machines and systems that improve efficiency, safety, and quality of life. </p>
+                            <h5>Score: 76%</h5>
+                        </div>
+                    </div>
+    
+                    <div class="education-card">
+                        <div class="education-logo">
+                            <img src="assets/schoollogo.jpg" alt="School Logo">
+                        </div>
+                        <div class="education-details">
+                            <h3>High School Certificate</h3>
+                            <h4>C.E.M Public School Ishapur Bulandshahr</h4>
+                            <p class="duration">Completed in 2019</p>
+                            <p>Science stream with a focus on Physics, Chemistry, and Mathematics.</p>
+                            <h5>Score: 76%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-container">
+                <h2>Get in Touch</h2>
+                <p>You can reach me via email at <a href="ravi2310010d@gmail.com">ravi2310010d@gmail.com</a> or connect with me on LinkedIn.</p>
+                <h3>Contact no. :- 8279500910</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ravi Tomar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
