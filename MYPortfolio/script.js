@@ -1,37 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const hamburger = document.createElement('div');
+  const navMenu = document.querySelector('.nav-menu');
 
-    const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-link');
+  // Hamburger menu
+  hamburger.classList.add('hamburger');
+  hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+  document.querySelector('.navbar-right').prepend(hamburger);
 
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.6
-    };
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-                
-              
-                const id = entry.target.getAttribute('id');
-                const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
-                
-               
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-        });
-    }, options);
-
-
-    sections.forEach(section => {
-        observer.observe(section);
+  // Active section highlight
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const id = entry.target.getAttribute('id');
+        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
     });
+  }, { threshold: 0.6 });
 
+  sections.forEach(section => observer.observe(section));
 });
