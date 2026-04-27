@@ -12,7 +12,8 @@ html {
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background: linear-gradient(135deg, #214858, #aecbd5, #3f616f);
     color: #111;
 }
 
@@ -22,9 +23,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+     background: rgba(30, 79, 100, 0.8);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  
 }
 
 .navbar {
@@ -35,6 +40,10 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     height: 70px;
+    
+}
+.navbar a {
+  color: #ffffff;
 }
 
 #logo {
@@ -195,6 +204,7 @@ header {
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #b4c1ce;
 }
 
 .skill-card:hover,
